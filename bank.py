@@ -1,4 +1,4 @@
-# week02.py
+# banks.py
 # this program prompts the user for two inputs of cents amounts. it then utputs those combined, formatted in euro and cents.
 
 # in the first amount, add your first amount of cents
