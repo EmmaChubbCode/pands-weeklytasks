@@ -1,21 +1,21 @@
+#INSTRUCTIONS:
+# enter this command in the terminal or in command line: python mobydick.py mobydick.txt
+
 
 # Assumption:s 
 # first assumption is that the file this program will operate on is a txt file.
 # I am assuming I should count only lower case e's because im interpreting the instructions as literal and exhaustive.
-# this text is in the English languaged so I'm assuming there are no accented e's, which would be different characters. i will not be searching them to count.
-# another assumption made in this code is that the txt file and the program are in the same directory. 
+# this text is in the English language so I'm assuming there are no accented e's, which would be different characters. i will not be searching them to count.
+# another assumption made in this code is that the txt file and the program are in the same directory. i checked this in the command line before using (e.g. "dir") 
 
 # instructions say read from the command file so used these resources to adapt code: 
 # https://www.geeksforgeeks.org/python-sys-module/ 
 # https://stackoverflow.com/questions/7439145/i-want-to-read-in-a-file-from-the-command-line-in-python 
 
 import sys
-
-# first it said the file didn't exist so i copied code from here to see the right way to include full path: https://www.w3schools.com/python/python_file_open.asp
-# Then i was using a single backslash which when placed next to a str is apparently interpreted as an escape character.
-# this resource below said i could do a few things to get around this. I decided to use an r to change the string to a raw string instead.
-# https://adamj.eu/tech/2022/11/04/why-does-python-deprecationwarning-invalid-escape-sequence/ 
-
+# the 1 here is the file name. the 0 is the script name. it indicates the first argument passed to the script. 
+# so im saying my variable FILENAME is whatever file name i actually pass to the script when i run it.
+# see: https://docs.python.org/3/library/sys.html#sys.argv 
 FILENAME = sys.argv[1]
 
 # this bit is basically the lecture notes + debugging from online sources. specifying that im reading a text file.
