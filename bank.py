@@ -1,6 +1,7 @@
 # banks.py
-# this program prompts the user for two inputs of cents amounts. it then utputs those combined, formatted in euro and cents.
+# this program prompts the user for two inputs of cents amounts. it then outputs those combined, formatted in euro and cents.
 
+# code creating user inputs is adjustd from Andrew's lab material.
 # in the first amount, add your first amount of cents
 centAmount1= int(input("Enter amount 1(in cents) here:"))
 # in the second amount, add your second amount of cents
