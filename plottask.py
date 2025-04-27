@@ -20,7 +20,7 @@ data = np.random.normal(loc=5, scale=2, size = 1000)
 
 x = np.linspace(0,10)
 
-# h is x**3. x is set above so h is based on x. 
+# h is x**3. x is set above so h is based on x. h(x)=x3 means take each value of x and cube it, giving the corresponding value of h. I've seen Ian do this in principles of DA so that's my understanding of it.
 h = x**3
 
 # create the figure and axes. copied this from my principles of DA notes where i put a few hists on one plot for my tasks.
@@ -50,9 +50,11 @@ plt.title("Histogram and function")
 
 # initial attempt looked really misaligned so
 # copied this from principles of DA notes where i had to make a few histograms and they were all overlapping
+# see: https://matplotlib.org/stable/users/explain/axes/tight_layout_guide.html#tight-layout-guide.
 fig.tight_layout()
 
 # save as png to show Andrew
+# see: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html 
 plt.savefig('plottask.png')
 
 #show the plot
